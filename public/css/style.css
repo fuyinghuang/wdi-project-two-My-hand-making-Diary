@@ -1,7 +1,33 @@
-.title{
+a{
   color: white;
 }
+div#masonry {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vw;
+  max-height: 800px;
+  font-size: 0;
+}
+div#masonry img {
+  transition: .8s opacity;
+  padding: 7px;
+  border-radius: 20px;
+  /* width: 33.3%; */
+}
 
+div#masonry:hover img { opacity: 0.3; }
+div#masonry:hover img:hover { opacity: 1; }
+
+h2{
+  font-family: 'Charmonman', cursive;
+}
+h1{
+    font-family: 'Mali', cursive;
+}
 p{
-  color: white;
+  font-family: 'Mali', cursive;
+}
+a{
+  font-family: 'Mali', cursive;
 }

@@ -1,6 +1,13 @@
-<div class="tile is-4 is-vertical">
+<h1 class="title is-2">All hand-mades</h1>
 <div class="columns is-multiline is-mobile">
-  <div class="column is-one-quarter">
-    <code>is-one-quarter</code>
-  </div>
+  <% handmades.forEach(handmade => {%>
+    <div id="masonry" class="column is-3-desktop is-4-tablet is-6-mobile">
+
+      <a href="/handmades/<%= handmade.id %>">
+      <img src=<%= handmade.image %> alt=<%= handmade.name %> />
+      <h4 class="subtitle is-4"><%= handmade.name %></h3>
+      </a>
+
+    </div>
+    <% }) %>
 </div>

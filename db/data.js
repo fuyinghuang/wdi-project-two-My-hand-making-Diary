@@ -3,7 +3,7 @@ const handmadesArray = [
     id: '0',
     name: 'Macaroon',
     tools: [ 'crochet (4mm)', 'cotton yarn purple 100g', 'cotton yarn yellow 100g','cotton yarn white 30g','cotton grean 100g','cotton 50g'],
-    image: 'https://scontent-lhr3-1.xx.fbcdn.net/v/t31.0-8/10924177_1522118381448470_356671844929452791_o.jpg?_nc_cat=102&_nc_ht=scontent-lhr3-1.xx&oh=60a3150ec486e5667922748174d9d83e&oe=5C3DBDD9',
+    image: 'https://i-h2.pinimg.com/564x/07/42/4c/07424c9822df5b6469307e59b32945f3.jpg',
     concept: 'I want it forever.'
   },
   {
@@ -15,7 +15,7 @@ const handmadesArray = [
   },
   {
     id: '2',
-    name: 'Elephant/s bed',
+    name: 'Elephant\'s bed',
     tools: [ 'crochrt (4mm)', 'purple lace yarn 150g'],
     image: 'https://scontent-lhr3-1.xx.fbcdn.net/v/t31.0-8/11412059_1430092863984356_8925411828553317105_o.jpg?_nc_cat=105&_nc_ht=scontent-lhr3-1.xx&oh=ce026de544151be1755fbf65f9f471d0&oe=5C4D4BEB',
     concept: 'The luxurist bed in the world!!!'
@@ -29,5 +29,5 @@ const handmadesArray = [
   }
 ];
 module.exports= {
-  handmade: handmadesArray
+  handmades: handmadesArray
 };
