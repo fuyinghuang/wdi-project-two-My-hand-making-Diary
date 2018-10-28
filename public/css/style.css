@@ -6,7 +6,7 @@ div#masonry {
   flex-direction: column;
   flex-wrap: wrap;
   height: 100vw;
-  max-height: 800px;
+  max-height: 500px;
   font-size: 0;
 }
 div#masonry img {
