@@ -29,13 +29,16 @@ app.get('/about', function(req, res) {
 });
 
 // index page
-app.get('/handmades',function(req,res){
+app.get('/handmades',function(req, res) {
   res.render('handmades/index', handMade);
 });
 
-
-
-
+// show route
+app.get('/handmades/:id', function(req, res) {
+  const handmade = handMade.handmades.filter(handmade =>
+    handmade.id === req.params.id)[0];
+  res.render('handmades/show', handmade);
+});
 
 
 
