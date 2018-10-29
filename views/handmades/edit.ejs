@@ -1,8 +1,8 @@
 <h2 class="title is-2">Edit Hand-made</h2>
-<form action="/handmades/<=% _id %>?_method=PUT" method="post">
+<form action="/handmades/<%= _id %>?_method=PUT" method="post">
   <div class="field">
     <label class="label is-size-4 is-normall" for="name">My hand-made</label>
-    <input class="input is-rounded is-normall" type="text" name="name" value="<%= name%>">
+  <input class="input is-rounded is-normall" type="text" name="name"  value="<%= name%>">
   </div>
 
   <div class="field">
@@ -21,7 +21,7 @@
   </div>
   <div class="field">
     <label class="label is-size-4" for="concept">Concept</label>
-    <textarea class="textarea" placeholder="<%= concept%>"> Concept</textarea>
+    <input class="input is-rounded is-large" type="text" name="concept"  value="<%= concept%>">
   </div>
-  <button class="button is-rounded is-dark">Add</button>
+  <button class="button is-rounded is-dark">Edit</button>
 </form>

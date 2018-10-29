@@ -28,6 +28,10 @@ router.get('/handmades/:id/edit', handmadeController.editRoute);
 //UPDATED route
 router.put('/handmades/:id',  handmadeController.updateRoute);
 
+// DELETE router
+router.delete('/handmades/:id', handmadeController.deleteRoute);
+
+
 // SHOW route
 router.get('/handmades/:id', handmadeController.showRoute);
 

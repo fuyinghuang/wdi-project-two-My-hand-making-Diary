@@ -11,8 +11,6 @@ function aboutRoute(req, res) {
   res.render('about');
 }
 
-
-
 function indexRoute(req, res) {
   Handmade.find().then(function(result) {
     res.render('handmades/index', { handmades: result });
@@ -23,8 +21,7 @@ function newRoute(req, res) {
   res.render('handmades/new');
 }
 
-
-function createRoute(req,res){
+function createRoute(req,res) {
   console.log('this is the request', req.method, req.body, req.method);
   // req.body.id = Math.floor(Math.random()*1000);
   // handMade.handmades.push(req.body);
@@ -34,20 +31,23 @@ function createRoute(req,res){
   });
 }
 
-function editRoute(req,res){
+function editRoute(req,res) {
   Handmade.findById(req.params.id).then(function(result){
     res.render('handmades/edit', result);
   });
 }
 
-
-
-function updateRoute(req, res){
+function updateRoute(req, res) {
   Handmade.findByIdAndUpdate(req.params.id, req.body).then((result) =>{
     res.redirect(`/handmades/${result._id}`);
   });
 }
 
+function deleteRoute(req, res) {
+  Handmade.findByIdAndDelete(req.params.id).then(() => {
+    res.redirect('/handmades');
+  });
+}
 
 
 function showRoute(req, res){
@@ -68,5 +68,6 @@ module.exports = {
   homeRoute: homeRoute,
   aboutRoute: aboutRoute,
   editRoute: editRoute,
-  updateRoute: updateRoute
+  updateRoute: updateRoute,
+  deleteRoute: deleteRoute
 };
