@@ -3,6 +3,16 @@ const Handmade = require('../models/handmade');
 
 
 
+function homeRoute(req, res) {
+  res.render('home');
+}
+
+function aboutRoute(req, res) {
+  res.render('about');
+}
+
+
+
 function indexRoute(req, res) {
   Handmade.find().then(function(result) {
     res.render('handmades/index', { handmades: result });
@@ -24,6 +34,21 @@ function createRoute(req,res){
   });
 }
 
+function editRoute(req,res){
+  Handmade.findById(req.params.id).then(function(result){
+    res.render('handmades/edit', result);
+  });
+}
+
+
+
+function updateRoute(req, res){
+  Handmade.findByIdAndUpdate(req.params.id, req.body).then((result) =>{
+    res.redirect(`/handmades/${result._id}`);
+  });
+}
+
+
 
 function showRoute(req, res){
   Handmade.findById(req.params.id).then(function(result){
@@ -35,10 +60,13 @@ function showRoute(req, res){
 
 
 
-
 module.exports = {
   indexRoute: indexRoute,
   newRoute: newRoute,
   createRoute: createRoute,
-  showRoute: showRoute
+  showRoute: showRoute,
+  homeRoute: homeRoute,
+  aboutRoute: aboutRoute,
+  editRoute: editRoute,
+  updateRoute: updateRoute
 };

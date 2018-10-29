@@ -1,0 +1,27 @@
+<h2 class="title is-2">Edit Hand-made</h2>
+<form action="/handmades/<=% _id %>?_method=PUT" method="post">
+  <div class="field">
+    <label class="label is-size-4 is-normall" for="name">My hand-made</label>
+    <input class="input is-rounded is-normall" type="text" name="name" value="<%= name%>">
+  </div>
+
+  <div class="field">
+    <label class="label is-size-4" for="tools">Tools</label>
+    <input class="input is-rounded is-normall" type="text" name="tools"  value="<%= tools%>">
+  </div>
+
+  <div class="field">
+    <label class="label is-size-4" for="material">Materials</label>
+    <input class="input is-rounded is-normall" type="text" name="materials" value="<%= materials%>">
+  </div>
+
+  <div class="field">
+    <label class="label is-size-4" for="image">Image (URL)</label>
+    <input class="input is-rounded is-normall" type="text" name="image" value="<%= image%>">
+  </div>
+  <div class="field">
+    <label class="label is-size-4" for="concept">Concept</label>
+    <textarea class="textarea" placeholder="<%= concept%>"> Concept</textarea>
+  </div>
+  <button class="button is-rounded is-dark">Add</button>
+</form>

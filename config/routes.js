@@ -4,16 +4,11 @@ const router = require('express').Router();
 
 
 
-// Home page
-router.get('/', function(req, res) {
-  res.render('home');
-});
+// Home page route
+router.get('/', handmadeController.homeRoute);
 
-// About page
-router.get('/about', function(req, res) {
-  res.render('about');
-});
-
+// About page route
+router.get('/about',  handmadeController.aboutRoute);
 
 // INDEX route
 router.get('/handmades',handmadeController.indexRoute);
@@ -23,8 +18,15 @@ router.get('/handmades',handmadeController.indexRoute);
 router.get('/handmades/new', handmadeController.newRoute);
 
 
-// listen for POST requests to handmades
+// CREATE route
 router.post('/handmades', handmadeController.createRoute);
+
+//EDIT route
+router.get('/handmades/:id/edit', handmadeController.editRoute);
+
+
+//UPDATED route
+router.put('/handmades/:id',  handmadeController.updateRoute);
 
 // SHOW route
 router.get('/handmades/:id', handmadeController.showRoute);

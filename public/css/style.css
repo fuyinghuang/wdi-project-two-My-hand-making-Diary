@@ -34,3 +34,9 @@ li {
   right: 15px;
   bottom: 15px;
 }
+div#pic img {
+  transition: .9s opacity;
+  padding: 7px;
+  border-radius: 20px;
+  /* width: 33.3%; */
+}

@@ -6,6 +6,7 @@ const app = express();
 const mongoose = require('mongoose');
 const env = require('./config/environment');
 const router = require('./config/routes');
+const methodOverride = require('method-override');
 // mongoose.connect('mongodb://localhost/handmades');
 mongoose.connect(env.dbUri);
 
@@ -18,6 +19,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const expressEjsLayouts = require('express-ejs-layouts');
 app.set('view engine', 'ejs');   //Express knows that views are written in ejs
 app.use(expressEjsLayouts);
+app.use(methodOverride('_method'));
 app.use(express.static('public'));
 app.use(router);
 
