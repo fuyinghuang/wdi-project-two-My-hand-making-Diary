@@ -49,11 +49,11 @@ const handmadesArray = [
   },
   {
     id: '6',
-    name: 'Smell My Sacks',
+    name: 'Smell My Socks',
     tools: [ 'rod needle (8mm) x4','wheel needle (10mm)'],
-    materials: [ 'orange merino wool yarn 300g', 'green merino wool yarn 100g'],
+    materials: [ 'merino wool yarn mixed brown color 500g'],
     image: 'https://scontent-lhr3-1.xx.fbcdn.net/v/t31.0-8/12029819_1485411005119208_8345006872718668448_o.jpg?_nc_cat=106&_nc_ht=scontent-lhr3-1.xx&oh=6e0b223c068145f9d32a6b50c94f31fb&oe=5C3F646E',
-    concept: 'I wear pumpkin!!!'
+    concept: 'Christmas is coming!!!'
   },
   {
     id: '7',

@@ -2,19 +2,19 @@ div#masonry {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 100vw;
+  /* height: 100vw; */
   max-height: 500px;
   font-size: 0;
 }
 div#masonry img {
-  transition: .8s opacity;
+  transition: .9s opacity;
   padding: 7px;
   border-radius: 20px;
   /* width: 33.3%; */
 }
 
-div#masonry:hover img { opacity: 0.3; }
-div#masonry:hover img:hover { opacity: 1; }
+div#masonry:hover img { opacity: 0.1; }
+div#masonry:hover img:hover { opacity: 0.1; }
 
 h2{
   font-family: 'Charmonman', cursive;
