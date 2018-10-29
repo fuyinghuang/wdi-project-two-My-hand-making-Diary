@@ -1,10 +1,12 @@
 const express = require('express');
 const app = express();
-const handMade = require('./db/data');
-const port = 4000;
-// const Handmade = require('./models/handmade');
+// const handMade = require('./db/data');
+// const port = 4000;
+const Handmade = require('./models/handmade');
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/handmades');
+const env = require('./config/environment');
+// mongoose.connect('mongodb://localhost/handmades');
+mongoose.connect(env.dbUri);
 
 
 // Body parser
@@ -31,8 +33,11 @@ app.get('/about', function(req, res) {
 
 // index page
 app.get('/handmades',function(req, res) {
-  res.render('handmades/index', handMade);
+  Handmade.find().then(function(result) {
+    res.render('handmades/index', { handmades: result });
+  });
 });
+
 
 
 //  NEW route
@@ -41,26 +46,33 @@ app.get('/handmades/new', function(req, res) {
 });
 
 
-// listen for POST requests to cakes
+// listen for POST requests to handmades
 app.post('/handmades', function(req,res){
   console.log('this is the request', req.method, req.body, req.method);
-  req.body.id = Math.floor(Math.random()*1000);
-  handMade.handmades.push(req.body);
-  // Cake.create(req.body);
-  res.redirect('/handmades');
+  // req.body.id = Math.floor(Math.random()*1000);
+  // handMade.handmades.push(req.body);
+  Handmade.create(req.body).then(handmade => {
+    console.log('Create a handmade', handmade);
+    res.redirect('/handmades');
+  });
 });
 
 
+// DELETE route
 
 
 
 // SHOW route
-app.get('/handmades/:id', function(req, res) {
-  const handmade = handMade.handmades.filter(handmade =>
-    handmade.id === req.params.id)[0];
-  res.render('handmades/show', handmade);
+// app.get('/handmades/:id', function(req, res) {
+//   const handmade = handMade.handmades.filter(handmade =>
+//     handmade.id === req.params.id)[0];
+//   res.render('handmades/show', handmade);
+// });
+app.get('/handmades/:id', function(req, res){
+  Handmade.findById(req.params.id).then(function(result){
+    res.render('handmades/show', result);
+  });
 });
-
 
 
 
