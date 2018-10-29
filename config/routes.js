@@ -1,5 +1,16 @@
 const handmadeController = require('../controllers/handmadeController');
+const authController = require('../controllers/authController');
 const router = require('express').Router();
+
+// register form route
+router.get('/register', authController.registerFormRoute);
+// register route(create route)
+router.post('/register', authController.registerRoute);
+
+// log in form route
+router.get('/login', authController.loginFormRoute);
+// log in route
+router.post('/login', authController.loginRoute);
 
 
 

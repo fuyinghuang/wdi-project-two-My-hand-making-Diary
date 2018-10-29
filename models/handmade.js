@@ -1,4 +1,3 @@
-
 const mongoose = require( 'mongoose');
 const handmadeSchema = mongoose.Schema({
   name: String,

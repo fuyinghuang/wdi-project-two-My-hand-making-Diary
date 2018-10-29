@@ -1,8 +1,6 @@
 const Handmade = require('../models/handmade');
 
 
-
-
 function homeRoute(req, res) {
   res.render('home');
 }
@@ -55,9 +53,6 @@ function showRoute(req, res){
     res.render('handmades/show', result);
   });
 }
-
-
-
 
 
 module.exports = {
