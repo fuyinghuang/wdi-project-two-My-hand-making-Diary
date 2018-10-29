@@ -2,8 +2,9 @@ const express = require('express');
 const app = express();
 const handMade = require('./db/data');
 const port = 4000;
-// const Cake = require('./models/cake');
-
+// const Handmade = require('./models/handmade');
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/handmades');
 
 
 // Body parser
@@ -41,13 +42,13 @@ app.get('/handmades/new', function(req, res) {
 
 
 // listen for POST requests to cakes
-// app.post('/cakes', function(req,res){
-//   console.log('this is the request', req.method, req.body, req.method);
-//   // req.body.id = Math.floor(Math.random()*1000);
-//   // cakeObject.cakes.push(req.body);
-//   Cake.create(req.body);
-//   res.redirect('/cakes');
-// });
+app.post('/handmades', function(req,res){
+  console.log('this is the request', req.method, req.body, req.method);
+  req.body.id = Math.floor(Math.random()*1000);
+  handMade.handmades.push(req.body);
+  // Cake.create(req.body);
+  res.redirect('/handmades');
+});
 
 
 
