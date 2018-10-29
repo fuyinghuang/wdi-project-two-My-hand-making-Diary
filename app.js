@@ -33,16 +33,21 @@ app.get('/handmades',function(req, res) {
   res.render('handmades/index', handMade);
 });
 
+
 //  NEW route
 app.get('/handmades/new', function(req, res) {
   res.render('handmades/new');
 });
 
-// 
-// // POST route
-// app.get('/handmades', function (req,res){
-//
-// }
+
+// listen for POST requests to cakes
+// app.post('/cakes', function(req,res){
+//   console.log('this is the request', req.method, req.body, req.method);
+//   // req.body.id = Math.floor(Math.random()*1000);
+//   // cakeObject.cakes.push(req.body);
+//   Cake.create(req.body);
+//   res.redirect('/cakes');
+// });
 
 
 
