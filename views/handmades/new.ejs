@@ -3,25 +3,28 @@
 
 <form action="/handmades" method="post">
   <div class="field">
-    <label class="label is-size-4" for="name">Name</label>
-    <input class="input is-info" type="text" name="name">
+    <label class="label is-size-4 is-normall" for="name">My hand-made</label>
+    <input class="input is-rounded is-normall" type="text" name="name" placeholder="name">
   </div>
 
   <div class="field">
     <label class="label is-size-4" for="tools">Tools</label>
-    <input class="input is-info" type="text" name="tools">
+    <input class="input is-rounded is-normall" type="text" name="tools" placeholder="tools">
   </div>
 
   <div class="field">
     <label class="label is-size-4" for="colors">Materials</label>
-    <input class="input is-info" type="text" name="colors">
+    <input class="input is-rounded is-normall" type="text" name="colors" placeholder="materials">
   </div>
 
   <div class="field">
     <label class="label is-size-4" for="image">Image (URL)</label>
-    <input class="input is-info" type="text" name="image">
+    <input class="input is-rounded is-normall" type="text" name="image" placeholder="image URL">
   </div>
-
-  <button class="button is-rounded is-info">Add</button>
-
+  <div class="field">
+    <label class="label is-size-4" for="concept">Concept</label>
+    <%# <input class="input is-rounded is-large" type="text" name="concept" placeholder="concept"> %>
+    <textarea class="textarea" placeholder="concept">Concept</textarea>
+  </div>
+  <button class="button is-rounded is-dark">Add</button>
 </form>

@@ -17,6 +17,7 @@ app.use(expressEjsLayouts);
 app.use(express.static('public'));
 
 
+
 // Home page
 app.get('/', function(req, res) {
   res.render('home');
@@ -32,12 +33,31 @@ app.get('/handmades',function(req, res) {
   res.render('handmades/index', handMade);
 });
 
-// show route
+//  NEW route
+app.get('/handmades/new', function(req, res) {
+  res.render('handmades/new');
+});
+
+// 
+// // POST route
+// app.get('/handmades', function (req,res){
+//
+// }
+
+
+
+
+
+// SHOW route
 app.get('/handmades/:id', function(req, res) {
   const handmade = handMade.handmades.filter(handmade =>
     handmade.id === req.params.id)[0];
   res.render('handmades/show', handmade);
 });
+
+
+
+
 
 
 
