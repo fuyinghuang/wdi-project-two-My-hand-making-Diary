@@ -8,9 +8,14 @@
   </div>
   <div class="navbar-end">
     <ul class="navbar-menu">
+      <% if(locals.isLoggedIn) { %>
+        <li class="navbar-item"><a class="tag is-light"href="/logout">Logout <%= locals.currentUser.username %> </a></li>
+        <li class="navbar-item"><a class="tag is-light"href="/about">Idea</a></li>
+        <li class="navbar-item"><a class="tag is-light"href="/handmades">Hand-mades</a></li>
+        <% } else {%>
       <li class="navbar-item"><a class="tag is-light"href="/about">Idea</a></li>
       <li class="navbar-item"><a class="tag is-light"href="/handmades">Hand-mades</a></li>
-      <li class="navbar-item"><a class="tag is-light"href="/logout">logout</a></li>
+      <% } %>
     </ul>
   </div>
 </nav>
