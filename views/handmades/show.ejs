@@ -16,44 +16,72 @@
     </div>
         <div id="pic" class="column is-half-desktop is-half-tablet is-half-mobile">
           <img src="<%= image %>" alt="<%= name %>">
-        </div>
-  </div>
-
-      <% if (locals.isLoggedIn) { %>
-        <div class="section columns is-mobile">
-          <div class="column is-one-fifth">
+          <% if (locals.isLoggedIn) { %>
+            <div class="section columns is-mobile">
+            <div class="column is-one-fifth">
             <a class="button is-rounded" href="/handmades/<%= _id %>/edit">Edit</a>
-          </div>
-          <div class="column is-one-fifth">
+            </div>
+            <div class="column is-one-fifth">
             <form action="/handmades/<%= id %>?_method=DELETE" method="post">
             <button class="button is-danger is-rounded">Delete</button>
             </form>
-          </div>
+            </div>
+            </div>
         </div>
+  </div>
+</section>
+<section class="section">
+<div class="columns is-mobile">
+  <div class="column is-half-desktop is-half-tablet is-half-mobile">
+    <% comments.forEach(comment => { %>
+      <div>
+      <span><strong><%= comment.user %></strong></span>
+      </div>
+      <div>
+      <span><%= '💜'.repeat(comment.score) %></span>
+      </div>
+      <div>
+      <span><%= comment.comment %></span>
+      </div>
+      <div>
+      <span><%= comment.commentDate %></span>
+      </div>
+      <span>
+      <form method="POST" action="/handmades/<%= _id %>/comments/<%= comment._id %>?_method=DELETE">
+      <button class="extra"> ✖︎</button>
+      </form>
+      </span>
+    <% }) %>
 
-        <% comments.forEach(comment => { %>
-          <li><strong><%= comment.user %></strong></li>
-          <li><%= '💜'.repeat(comment.score) %></li>
-          <li><%= comment.comment %></li>
-          <li><%= comment.commentDate %></li>
-          <span>
-          <form method="POST" action="/handmades/<%= _id %>/comments/<%= comment._id %>?_method=DELETE">
-          <button class="extra"> ✖︎</button>
-          </form>
-          </span>
-          <% }) %>
-       <form action='/handmades/<%= id %>/comments' method="post">
-        <input name='user' value='<%= locals.currentUser.username %>' hidden/>
-        <label for='score'>Score (1 to 10) </label>
-        <input name='score' type='Number' min='1' max='10'/>
-        <br />
-        <label for='comment'>Comments </label>
-        <textarea name='comment'></textarea>
-        <label for='commentDate'>Date</label>
-        <input name='commentDate'type='date' >
-        <button>Submit comment</button>
-        </form>
-
-
-      <% } %>
+    </div>
+    <div class="column is-half-desktop is-half-tablet is-half-mobile">
+    <div class="columns">
+    <div class="column is-4 is-offset-4">
+    <h2 class="title is-2">Reviews</h2>
+    <form action='/handmades/<%= id %>/comments' method="post">
+    <div class="field">
+    <input name='user' value='<%= locals.currentUser.username %>' hidden/>
+    </div>
+    <div class="field">
+    <label for='score'>Score (1 to 10) </label>
+    </div>
+    <div class="field">
+    <input name='score' type='Number' min='1' max='10'/>
+    <br />
+    </div>
+    <div class="field">
+    <label for='commentDate'>Date</label>
+    <input name='commentDate'type='date'>
+    </div>
+    <div class="field">
+    <label for='comment'>Something to say... </label>
+    <textarea name='comment'></textarea>
+    </div>
+    <div class="field">
+    <button>Submit</button>
+    </div>
+    </form>
+    </div>
+    </div>
+  <% } %>
 </section>

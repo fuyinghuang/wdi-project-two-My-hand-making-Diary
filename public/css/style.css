@@ -27,7 +27,6 @@ p{
 }
 li {
   font-family: 'Mali', cursive;
-  color:white;
 }
 #button {
   position: fixed;
@@ -40,7 +39,12 @@ div#pic img {
   border-radius: 20px;
   /* width: 33.3%; */
 }
-/* 
+/*
 #home{
   background-color: grey;
 } */
+
+.footer {
+ padding-top: 0px;
+ padding-bottom: 3.2rem;
+}

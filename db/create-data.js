@@ -14,7 +14,7 @@ const handmades = [
   },
   {
     name: 'Elephant Web',
-    tools: [ 'crochrt (4mm)'],
+    tools: [ 'crochet (4mm)'],
     materials: [ 'crochrt (4mm)', 'purple lace yarn 150g'],
     image: 'https://scontent-lhr3-1.xx.fbcdn.net/v/t31.0-8/11412059_1430092863984356_8925411828553317105_o.jpg?_nc_cat=105&_nc_ht=scontent-lhr3-1.xx&oh=ce026de544151be1755fbf65f9f471d0&oe=5C4D4BEB',
     concept: 'The luxurist bed in the world!!!'
