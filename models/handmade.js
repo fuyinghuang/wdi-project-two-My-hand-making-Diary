@@ -5,7 +5,7 @@ const handmadeSchema = mongoose.Schema({
   materials: [String],
   image: String,
   concept: String,
-  commments: [
+  comments: [
     {
       user: String,
       comment: String,

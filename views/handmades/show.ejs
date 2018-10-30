@@ -29,9 +29,7 @@
             </form>
           </div>
         </div>
-
        <form action='/handmades/<%= id %>/comments' method="post">
-        <label for='user'>User </label>
         <input name='user' value='<%= locals.currentUser.username %>' hidden/>
         <label for='score'>Score (1 to 10) </label>
         <input name='score' type='Number' min='1' max='10'/>
