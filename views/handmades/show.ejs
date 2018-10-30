@@ -18,6 +18,7 @@
           <img src="<%= image %>" alt="<%= name %>">
         </div>
   </div>
+
       <% if (locals.isLoggedIn) { %>
         <div class="section columns is-mobile">
           <div class="column is-one-fifth">
@@ -29,6 +30,18 @@
             </form>
           </div>
         </div>
+
+        <% comments.forEach(comment => { %>
+          <li><strong><%= comment.user %></strong></li>
+          <li><%= '💜'.repeat(comment.score) %></li>
+          <li><%= comment.comment %></li>
+          <li><%= comment.commentDate %></li>
+          <span>
+          <form method="POST" action="/handmades/<%= _id %>/comments/<%= comment._id %>?_method=DELETE">
+          <button class="extra"> ✖︎</button>
+          </form>
+          </span>
+          <% }) %>
        <form action='/handmades/<%= id %>/comments' method="post">
         <input name='user' value='<%= locals.currentUser.username %>' hidden/>
         <label for='score'>Score (1 to 10) </label>
@@ -40,16 +53,7 @@
         <input name='commentDate'type='date' >
         <button>Submit comment</button>
         </form>
-        <% comments.forEach(comment => { %>
-          <li><strong><%= comment.user %></strong></li>
-          <li><%= '💜'.repeat(comment.score) %></li>
-          <li><%= comment.comment %></li>
-          <li><%= comment.commentDate %></li>
-          <span>
-          <form method="POST" action="/handmades/<%= _id %>/comments/<%= comment._id %>?_method=DELETE">
-          <button class="extra"> ✖︎</button>
-          </form>
-          </span>
-        <% }) %>
+
+
       <% } %>
 </section>

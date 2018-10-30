@@ -13,13 +13,6 @@ const handmades = [
     concept: 'I want it forever.'
   },
   {
-    name: 'Tiny Tiny',
-    tools: [ 'crochet (5mm)'],
-    materials: [ 'hemp rope 200g', 'cotton yarn white 100g', 'brown leather rope 50cm'],
-    image: 'https://scontent-lhr3-1.xx.fbcdn.net/v/t31.0-8/11754383_1438118433181799_3642149608190208505_o.jpg?_nc_cat=110&_nc_ht=scontent-lhr3-1.xx&oh=7c07e562005fb4c7c3672a1e6fdc54e3&oe=5C7E52A6',
-    concept: 'Useless is the best.'
-  },
-  {
     name: 'Elephant Web',
     tools: [ 'crochrt (4mm)'],
     materials: [ 'crochrt (4mm)', 'purple lace yarn 150g'],
@@ -27,11 +20,18 @@ const handmades = [
     concept: 'The luxurist bed in the world!!!'
   },
   {
+    name: 'Tiny Tiny',
+    tools: [ 'crochet (5mm)'],
+    materials: [ 'hemp rope 200g', 'cotton yarn white 100g', 'brown leather rope 50cm'],
+    image: 'https://scontent-lhr3-1.xx.fbcdn.net/v/t31.0-8/11754383_1438118433181799_3642149608190208505_o.jpg?_nc_cat=110&_nc_ht=scontent-lhr3-1.xx&oh=7c07e562005fb4c7c3672a1e6fdc54e3&oe=5C7E52A6',
+    concept: 'Useless is the best.'
+  },
+  {
     name: 'Let\'s Go Picnic',
     tools: [ 'crochet (7mm)'],
     materials: [ 'Raffia mixed green 250g', 'wooden button x1'],
     image: 'https://scontent-lhr3-1.xx.fbcdn.net/v/t31.0-8/11212616_1425049907821985_5054781303753966539_o.jpg?_nc_cat=100&_nc_ht=scontent-lhr3-1.xx&oh=fa7187946d19a73e01f8709d1cf3aeac&oe=5C835571',
-    concept: 'I wear pumpkin!!!'
+    concept: 'Picnic time!!!'
   },
   {
     name: '8 Wonders in the World',

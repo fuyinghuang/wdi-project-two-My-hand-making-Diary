@@ -5,6 +5,7 @@ const handmadeSchema = mongoose.Schema({
   materials: [String],
   image: String,
   concept: String,
+  addedBy: { type: mongoose.Schema.ObjectId, ref: 'User' },
   comments: [
     {
       user: String,

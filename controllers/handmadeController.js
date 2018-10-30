@@ -49,7 +49,7 @@ function deleteRoute(req, res) {
 
 
 function showRoute(req, res){
-  Handmade.findById(req.params.id).then(function(result){
+  Handmade.findById(req.params.id).populate('comments.user addedBy').then(function(result){
     console.log(result);
     res.render('handmades/show', result);
   });

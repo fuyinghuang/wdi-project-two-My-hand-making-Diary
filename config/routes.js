@@ -2,6 +2,7 @@ const handmadeController = require('../controllers/handmadeController');
 const authController = require('../controllers/authController');
 const commentController = require('../controllers/commentController');
 const secureRoute = require('../lib/secureRoute');
+// const userController = require('../controllers/userController');
 const router = require('express').Router();
 
 // register form route
@@ -53,5 +54,7 @@ router.post('/handmades/:id/comments', secureRoute, commentController.createComm
 
 // Comment DELETE route
 router.delete('/handmades/:id/comments/:commentId', secureRoute, commentController.deleteCommentRoute);
+
+// router.get('/user/:id',  secureRoute, userController.show);
 
 module.exports = router;
