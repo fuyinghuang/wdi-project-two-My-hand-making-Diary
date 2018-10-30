@@ -1,5 +1,6 @@
 const handmadeController = require('../controllers/handmadeController');
 const authController = require('../controllers/authController');
+const commentController = require('../controllers/commentController');
 const secureRoute = require('../lib/secureRoute');
 const router = require('express').Router();
 
@@ -15,7 +16,6 @@ router.post('/login', authController.loginRoute);
 
 // logout route
 router.get('/logout', authController.logoutRoute);
-
 
 
 // Home page route
@@ -45,10 +45,14 @@ router.put('/handmades/:id', secureRoute,handmadeController.updateRoute);
 // DELETE router
 router.delete('/handmades/:id', secureRoute,handmadeController.deleteRoute);
 
-
 // SHOW route
 router.get('/handmades/:id', handmadeController.showRoute);
 
+// Comment CREATE route
+router.post('/handmades/:handmadeId/comments', secureRoute, commentController.createCommentRoute);
+// Rating DELETE route
+router.delete('/handmades/:handmadeId/comments/:commentId', secureRoute,
+  commentController.deleteCommentRoute);
 
-
+  
 module.exports = router;

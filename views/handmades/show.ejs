@@ -1,33 +1,57 @@
 <section class="section">
-<div class="columns is-mobile">
-  <div class="column is-half-desktop is-half-tablet is-half-mobile">
-    <h2 class="title is-2"><%= name %></h2>
-    <p>Tools:</p>
+  <div class="columns is-mobile">
+    <div class="column is-half-desktop is-half-tablet is-half-mobile">
+      <h2 class="title is-2"><%= name %></h2>
+      <p>Tools:</p>
       <% tools.forEach(tool => { %>
         <span class="tag"><%= tool %></span>
         <% }) %>
-    <p>Materials:</p>
-      <% materials.forEach(material => { %>
-        <span class="tag"><%= material %></span>
+        <p>Materials:</p>
+        <% materials.forEach(material => { %>
+         <span class="tag"><%= material %></span>
+          <% }) %>
+          <p>Concept:
+          <h3 class="subtitle is-5"><%= concept %></h3>
+          </p>
+    </div>
+        <div id="pic" class="column is-half-desktop is-half-tablet is-half-mobile">
+          <img src="<%= image %>" alt="<%= name %>">
+        </div>
+  </div>
+      <% if (locals.isLoggedIn) { %>
+        <div class="section columns is-mobile">
+          <div class="column is-one-fifth">
+            <a class="button is-rounded" href="/handmades/<%= _id %>/edit">Edit</a>
+          </div>
+          <div class="column is-one-fifth">
+            <form action="/handmades/<%= id %>?_method=DELETE" method="post">
+            <button class="button is-danger is-rounded">Delete</button>
+            </form>
+          </div>
+        </div>
+
+       <form action='/handmades/<%= id %>/comments' method="post">
+        <label for='user'>User </label>
+        <input name='user' value='<%= locals.currentUser.username %>' hidden/>
+        <label for='score'>Score (1 to 10) </label>
+        <input name='score' type='Number' min='1' max='10'/>
+        <br />
+        <label for='comment'>Comments </label>
+        <textarea name='comment'></textarea>
+        <label for='commentDate'>Date</label>
+        <input name='commentDate'type='date' >
+        <button>Submit comment</button>
+        </form>
+        <% comments.forEach(comment => { %>
+          <li><strong><%= comment.user %></strong></li>
+          <li><%= '💜'.repeat(comment.score) %></li>
+          <li><%= comment.comment %></li>
+          <li><%= comment.commentDate %></li>
+          <span>
+          <form method="POST" action="/handmades/<%= _id %>/comments/<%= comment._id %>?_method=DELETE">
+          <button class="extra"> ✖︎</button>
+          </form>
+          </span>
         <% }) %>
-      <p>Concept:
-        <h3 class="subtitle is-5"><%= concept %></h3>
-      </p>
-    </div>
-    <div id="pic" class="column is-half-desktop is-half-tablet is-half-mobile">
-      <img src="<%= image %>" alt="<%= name %>">
-    </div>
-    </div>
-  <% if (locals.isLoggedIn) { %>
-  <div class="section columns is-mobile">
-    <div class="column is-one-fifth">
-      <a class="button is-rounded" href="/handmades/<%= _id %>/edit">Edit</a>
-    </div>
-    <div class="column is-one-fifth">
-      <form action="/handmades/<%= id %>?_method=DELETE" method="post">
-        <button class="button is-danger is-rounded">Delete</button>
-      </form>
-    </div>
-    </div>
- <% } %>
+      <% } %>
 </section>

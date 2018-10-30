@@ -4,7 +4,15 @@ const handmadeSchema = mongoose.Schema({
   tools: [String],
   materials: [String],
   image: String,
-  concept: String
+  concept: String,
+  commments: [
+    {
+      user: String,
+      comment: String,
+      score: Number,
+      commentDate: { type: Date, default: Date.now }
+    }
+  ]
 });
 
 const handmadeModel = mongoose.model('Handmade', handmadeSchema);
