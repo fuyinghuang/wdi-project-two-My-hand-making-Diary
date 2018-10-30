@@ -6,17 +6,20 @@ function registerFormRoute(req, res) {
 }
 
 function registerRoute(req, res) {
+  console.log('A new register', req.body);
   User.create(req.body).then(result => {
+    console.log('this is register', req.body);
     console.log('User created', result);
     res.redirect('/');
   });
 }
 
+
 function loginFormRoute(req, res) {
   res.render('auth/login');
 }
 
-// Login route
+
 function loginRoute(req, res) {
   console.log('User is logging in', req.body);
   User.findOne({ email: req.body.email }).then(result => {
@@ -32,14 +35,16 @@ function loginRoute(req, res) {
 }
 
 
-
-// Logout route
-
-
+function logoutRoute(req, res) {
+  req.session.regenerate(function(){
+    res.redirect('/');
+  });
+}
 
 module.exports = {
   registerFormRoute: registerFormRoute,
   registerRoute: registerRoute,
   loginFormRoute: loginFormRoute,
-  loginRoute: loginRoute
+  loginRoute: loginRoute,
+  logoutRoute: logoutRoute
 };

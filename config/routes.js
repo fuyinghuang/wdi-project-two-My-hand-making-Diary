@@ -12,6 +12,8 @@ router.get('/login', authController.loginFormRoute);
 // log in route
 router.post('/login', authController.loginRoute);
 
+// logout route
+router.get('/logout', authController.logoutRoute);
 
 
 
