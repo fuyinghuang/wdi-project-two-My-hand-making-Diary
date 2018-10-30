@@ -18,6 +18,7 @@
       <img src="<%= image %>" alt="<%= name %>">
     </div>
     </div>
+  <% if (locals.isLoggedIn) { %>
   <div class="section columns is-mobile">
     <div class="column is-one-fifth">
       <a class="button is-rounded" href="/handmades/<%= _id %>/edit">Edit</a>
@@ -28,5 +29,5 @@
       </form>
     </div>
     </div>
-
- </section>
+ <% } %>
+</section>

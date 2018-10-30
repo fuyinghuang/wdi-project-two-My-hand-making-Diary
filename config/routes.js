@@ -1,5 +1,6 @@
 const handmadeController = require('../controllers/handmadeController');
 const authController = require('../controllers/authController');
+const secureRoute = require('../lib/secureRoute');
 const router = require('express').Router();
 
 // register form route
@@ -28,21 +29,21 @@ router.get('/handmades',handmadeController.indexRoute);
 
 
 //  NEW route
-router.get('/handmades/new', handmadeController.newRoute);
+router.get('/handmades/new', secureRoute,handmadeController.newRoute);
 
 
 // CREATE route
-router.post('/handmades', handmadeController.createRoute);
+router.post('/handmades', secureRoute, handmadeController.createRoute);
 
 //EDIT route
-router.get('/handmades/:id/edit', handmadeController.editRoute);
+router.get('/handmades/:id/edit', secureRoute, handmadeController.editRoute);
 
 
 //UPDATED route
-router.put('/handmades/:id',  handmadeController.updateRoute);
+router.put('/handmades/:id', secureRoute,handmadeController.updateRoute);
 
 // DELETE router
-router.delete('/handmades/:id', handmadeController.deleteRoute);
+router.delete('/handmades/:id', secureRoute,handmadeController.deleteRoute);
 
 
 // SHOW route
