@@ -11,12 +11,12 @@ function createCommentRoute(req, res) {
 }
 
 function deleteCommentRoute(req, res) {
-  console.log('Deleting comment', req.params.handmadeId);
-  Handmade.findById(req.params.handmadeId)
+  console.log('Deleting comment', req.params.commentId);
+  Handmade.findById(req.params.id)
     .then(handmade => {
-      handmade.comments.id(req.params.handmadeId).remove();
+      handmade.comments.id(req.params.commentId).remove();
       handmade.save()
-        .then(() => res.redirect(`/comments/${req.params.handmadeId}`));
+        .then(() => res.redirect(`/handmades/${req.params.id}`));
     });
 }
 

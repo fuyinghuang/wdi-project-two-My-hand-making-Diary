@@ -52,7 +52,6 @@ router.get('/handmades/:id', handmadeController.showRoute);
 router.post('/handmades/:id/comments', secureRoute, commentController.createCommentRoute);
 
 // Comment DELETE route
-router.delete('/handmades/:handmadeId/comments/:commentId', secureRoute,commentController.deleteCommentRoute);
-
+router.delete('/handmades/:id/comments/:commentId', secureRoute, commentController.deleteCommentRoute);
 
 module.exports = router;

@@ -9,17 +9,18 @@
   <div class="navbar-end">
   <nav class="navbar" role="navigation" aria-label="dropdown navigation">
   <div class="navbar-item has-dropdown is-hoverable">
-  <a class="navbar-link"></a>
+
   <% if(locals.isLoggedIn) { %>
-    <div class="navbar-dropdown  is-boxed" >
-    <a class="navbar-item"href="/logout" > Logout <%= locals.currentUser.username %> /a>
+    <div class="navbar is-light" >
+    <a class="navbar-item"href="/logout" > Logout <%= locals.currentUser.username %> </a>
     <a class="navbar-item" href="/about"> Idea</a>
     <a class="navbar-item" href="/handmades">Hand-mades</a>
     <hr class="navbar-divider">
     <div class="navbar-item"> Coming soon</div>
     </div>
     <% } else {%>
-      <div class="navbar-dropdown" >
+      <a class="navbar-link" ></a>
+      <div class="navbar-dropdown is-light " >
       <a class="navbar-item" href="/about"> Idea</a>
       <a class="navbar-item" href="/handmades">Hand-mades</a>
       <hr class="navbar-divider">
