@@ -8,6 +8,9 @@ function homeRoute(req, res) {
 function aboutRoute(req, res) {
   res.render('about');
 }
+function toolsRoute(req, res) {
+  res.render('handmades/tools');
+}
 
 function indexRoute(req, res) {
   Handmade.find().then(function(result) {
@@ -67,6 +70,7 @@ module.exports = {
   showRoute: showRoute,
   homeRoute: homeRoute,
   aboutRoute: aboutRoute,
+  toolsRoute: toolsRoute,
   editRoute: editRoute,
   updateRoute: updateRoute,
   deleteRoute: deleteRoute

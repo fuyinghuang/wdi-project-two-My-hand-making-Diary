@@ -12,6 +12,7 @@ router.post('/register', authController.registerRoute);
 
 // log in form route
 router.get('/login', authController.loginFormRoute);
+
 // log in route
 router.post('/login', authController.loginRoute);
 
@@ -24,6 +25,9 @@ router.get('/', handmadeController.homeRoute);
 
 // About page route
 router.get('/about',  handmadeController.aboutRoute);
+
+// Tools page route
+router.get('/handmades/tools',  handmadeController.toolsRoute);
 
 // INDEX route
 router.get('/handmades',handmadeController.indexRoute);
