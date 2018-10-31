@@ -16,11 +16,21 @@ div#masonry img {
 div#masonry:hover img { opacity: 0.1; }
 div#masonry:hover img:hover { opacity: 0.1; }
 
-h2{
-  font-family: 'Charmonman', cursive;
+#concept{
+    font-family: 'Indie Flower', cursive;
 }
+h4{
+  font-family: 'Mali', cursive;
+}
+
 h1{
     font-family: 'Mali', cursive;
+}
+h2{
+    font-family: 'Charmonman', cursive;
+}
+h3{
+  font-family: 'Indie Flower', cursive;
 }
 p{
   font-family: 'Mali', cursive;
@@ -44,7 +54,10 @@ div#pic img {
   /* background-color: grey; */
      background-image: url("/images/upsplash.jpg");
 
+}
 
+#welcome{
+text-align: center;
 
 }
 
