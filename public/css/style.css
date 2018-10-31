@@ -42,7 +42,7 @@ div#pic img {
 
 #home{
   /* background-color: grey; */
-     background-image: url(./images/upsplash.jpg);
+     background-image: url("/images/upsplash.jpg");
 
 
 

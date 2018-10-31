@@ -13,11 +13,11 @@ const userSchema = mongoose.Schema({
 // });
 //
 //
-// userSchema.virtual('addedHandmades', {
-//   ref: 'Handmade',
-//   localField: '_id',
-//   foreignField: 'addedBy'
-// });
+userSchema.virtual('addedHandmades', {
+  ref: 'Handmade',
+  localField: '_id',
+  foreignField: 'addedBy'
+});
 
 
 
