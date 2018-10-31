@@ -1,3 +1,33 @@
+#home {
+  background-image: url("../images/unsplash.jpg");
+  background-size: cover;
+  margin: 10px;
+}
+#welcome {
+  text-align: center;
+  font-weight: bold;
+}
+#sign{
+  font-size: 15px;
+  text-align: center;
+}
+.box {
+  margin-top: 80px;
+}
+#title{
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+}
+#subtitle{
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+#nav{
+  padding-left: 65px;
+  opacity: 0.5;
+}
 div#masonry img {
   transition: .9s opacity;
   padding: 7px;
@@ -42,22 +72,7 @@ div#pic img {
   /* width: 33.3%; */
 }
 
-
-#home {
-  background-image: url("../images/unsplash.jpg");
-  background-size: cover;
-  margin: 10px;
-}
-
-#welcome {
-text-align: center;
-
-}
-.box {
-  margin-top: 100px;
-}
-
 .footer {
-  margin-top: 90px;
- padding-bottom: 3rem;
+  margin-top: 35px;
+ padding-bottom: 2.3rem;
 }
