@@ -32,6 +32,10 @@
   background-image: url("../images/diy.jpg");
   background-size: cover;
 }
+
+#add{
+  font-size: 25px;
+}
 div#masonry img {
   transition: .9s opacity;
   padding: 7px;
@@ -40,6 +44,10 @@ div#masonry img {
 
 div#masonry:hover img:hover {
   opacity: 0.1;
+}
+
+.font{
+    font-family: 'Mali', cursive;
 }
 
 #concept{
