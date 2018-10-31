@@ -1,20 +1,12 @@
-div#masonry {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  /* height: 100vw; */
-  max-height: 500px;
-  font-size: 0;
-}
 div#masonry img {
   transition: .9s opacity;
   padding: 7px;
   border-radius: 20px;
-  /* width: 33.3%; */
 }
 
-div#masonry:hover img { opacity: 0.1; }
-div#masonry:hover img:hover { opacity: 0.1; }
+div#masonry:hover img:hover {
+  opacity: 0.1;
+}
 
 #concept{
     font-family: 'Indie Flower', cursive;
@@ -50,18 +42,22 @@ div#pic img {
   /* width: 33.3%; */
 }
 
-#home{
-  /* background-color: grey; */
-     background-image: url("/images/upsplash.jpg");
 
+#home {
+  background-image: url("../images/unsplash.jpg");
+  background-size: cover;
+  margin: 10px;
 }
 
-#welcome{
+#welcome {
 text-align: center;
 
 }
+.box {
+  margin-top: 100px;
+}
 
 .footer {
- padding-top: 0px;
- padding-bottom: 3.2rem;
+  margin-top: 90px;
+ padding-bottom: 3rem;
 }
