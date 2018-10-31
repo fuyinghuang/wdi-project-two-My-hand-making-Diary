@@ -8,7 +8,7 @@ Handmade.collection.drop();
 User.collection.drop();
 
 const userData = [{
-  username: 'doris',
+  username: 'Doris',
   email: 'd@d.com',
   password: 'd'
 }, {

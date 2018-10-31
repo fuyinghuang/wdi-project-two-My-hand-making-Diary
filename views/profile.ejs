@@ -1,10 +1,13 @@
 <h1><%= username %></h1>
 
-<h1>Handmades I have commented on </h1>
+<%# <h1>Handmades I have commented on </h1> %>
 
 
 
 <h1>Handmades I have added </h1>
 <% addedHandmades.forEach(handmade => { %>
+  <a href="/handmades/<%= handmade.id %>">
     <p><strong><%= handmade.name %></strong></p>
+    </a>
+
 <% }) %>
