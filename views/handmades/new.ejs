@@ -5,62 +5,32 @@
     <form action="/handmades" method="post">
         <div class="field">
           <label class="label" for="name">My hand-made</label>
-          <div class="control has-icons-left has-icons-right">
+          <div class="control">
             <input class="input is-rounded is-normall" type="text" name="name" placeholder="name">
-            <span class="icon is-small is-left">
-              <i class="fas fa-user"></i>
-            </span>
-            <span class="icon is-small is-right">
-              <i class="fas fa-check"></i>
-            </span>
           </div>
         </div>
         <div class="field">
           <label class="label" for="tools">Tools</label>
-          <div class="control has-icons-left has-icons-right">
-          <input class="input is-rounded is-normall" type="text" name="tools"  placeholder="tools">
-            <span class="icon is-small is-left">
-              <i class="fas fa-envelope"></i>
-            </span>
-            <span class="icon is-small is-right">
-              <i class="fas fa-exclamation-triangle"></i>
-            </span>
+          <div class="control">
+          <input class="input is-rounded is-normall" type="text" name="tools"  placeholder="tools" />
           </div>
         </div>
         <div class="field">
           <label class="label" for="material">Materials</label>
-          <div class="control has-icons-left has-icons-right">
+          <div class="control">
             <input class="input is-rounded is-normall" type="text" name="materials" placeholder="materials">
-            <span class="icon is-small is-left">
-              <i class="fas fa-envelope"></i>
-            </span>
-            <span class="icon is-small is-right">
-              <i class="fas fa-exclamation-triangle"></i>
-            </span>
           </div>
         </div>
         <div class="field">
           <label class="label" for="material" for="image">Image (URL)</label>
-          <div class="control has-icons-left has-icons-right">
+          <div class="control">
             <input class="input is-rounded is-normall" type="text" name="image" placeholder="image URL">
-            <span class="icon is-small is-left">
-              <i class="fas fa-envelope"></i>
-            </span>
-            <span class="icon is-small is-right">
-              <i class="fas fa-exclamation-triangle"></i>
-            </span>
           </div>
         </div>
         <div class="field">
           <label class="label" for="material" for="concept">Concept</label>
-          <div class="control has-icons-left has-icons-right">
+          <div class="control">
             <textarea class="textarea" placeholder="concept">Concept</textarea>
-            <span class="icon is-small is-left">
-              <i class="fas fa-envelope"></i>
-            </span>
-            <span class="icon is-small is-right">
-              <i class="fas fa-exclamation-triangle"></i>
-            </span>
           </div>
         </div>
         <input type="text" name="addedBy" value="<%= locals.currentUser._id  %>" hidden>
