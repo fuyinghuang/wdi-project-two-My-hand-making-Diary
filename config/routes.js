@@ -32,6 +32,9 @@ router.get('/handmades/tools',  handmadeController.toolsRoute);
 // Materials page route
 router.get('/handmades/materials',  handmadeController.materialsRoute);
 
+// Contact page route
+router.get('/handmades/contact',  handmadeController.contactRoute);
+
 // INDEX route
 router.get('/handmades',handmadeController.indexRoute);
 
