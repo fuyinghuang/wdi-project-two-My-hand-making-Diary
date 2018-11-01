@@ -1,4 +1,4 @@
-#home {
+.home {
   background-image: url("../images/unsplash.jpg");
   background-size: cover;
   margin: 10px;
@@ -7,19 +7,19 @@
   text-align: center;
   font-weight: bold;
 }
-#sign{
+.sign{
   font-size: 15px;
   text-align: center;
 }
 .box {
   margin-top: 80px;
 }
-#title{
+.addicts{
   font-size: 40px;
   color: white;
   font-weight: bold;
 }
-#subtitle{
+.lover{
   font-size: 30px;
   color: white;
   font-weight: bold;

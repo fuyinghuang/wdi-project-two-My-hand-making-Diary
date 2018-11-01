@@ -1,12 +1,9 @@
 # General Assembly WDI Project 2: My Hand-making Diary
 
-[GitHub Pages](https://huangfuin1101.github.io/wdi-project-one/)
+[Heroku Pages](https://my-hand-making-diary.herokuapp.com/)
 
-[GitHub Repo](https://github.com/huangfuin1101/wdi-project-one/tree/gh-pages)
+[GitHub Repo](https://github.com/huangfuin1101/wdi-project-two-My-hand-making-Diary)
 
-Galaxy Wars is memory game based on the concept of "Simon Says". Playing the game has both fun and the awareness of protecting the living environment.
-
-Galaxy Wars is my first project of Web Development Immersive in General Assembly. It is my first game built individually with the practice of HTML,CSS and JavaScript.
 
 ## Landing Page
 

@@ -7,7 +7,7 @@ function registerFormRoute(req, res) {
 
 function registerRoute(req, res) {
   User.create(req.body).then(() => {
-    res.redirect('/');
+    res.render('registered');
   });
 }
 
@@ -31,7 +31,7 @@ function loginRoute(req, res) {
 
 function logoutRoute(req, res) {
   req.session.regenerate(function(){
-    res.redirect('/');
+    res.render('logout');
   });
 }
 
