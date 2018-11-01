@@ -29,6 +29,9 @@ router.get('/about',  handmadeController.aboutRoute);
 // Tools page route
 router.get('/handmades/tools',  handmadeController.toolsRoute);
 
+// Materials page route
+router.get('/handmades/materials',  handmadeController.materialsRoute);
+
 // INDEX route
 router.get('/handmades',handmadeController.indexRoute);
 

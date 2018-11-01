@@ -6,20 +6,22 @@
       <section class="hero">
         <div class="hero-body">
           <div class="container">
-            <a href="/handmades/tools"><h4 class="subtitle is-4">Tools:</h4></a>
+            <a class="button is-light" href="/handmades/tools"><h4 class="subtitle is-4">Tools:</h4></a>
+            <br />
               <% tools.forEach(tool => { %>
-                 <span class="tag"><p class="subtitle is-6"><%= tool %></p></span>
+                 <span ><p class="subtitle is-6"><%= tool %></p></span>
              <% }) %>
           </div>
           </br>
          <div class="container">
-           <h4 class="subtitle is-4">Materials:</h4>
+             <a class="button is-light" href="/handmades/materials"><h4 class="subtitle is-4">Materials:</h4></a>
+             <br />
               <% materials.forEach(material => { %>
-                <span class="tag"><p class="subtitle is-6"><%= material %></p></span>
+                <span><p class="subtitle is-6"><%= material %></p></span>
             <% }) %>
          </div>
           <br>
-          <h4 class="subtitle is-4">Concept:</h4>
+          <h4 class="subtitle is-4 tag">Concept:</h4>
            <h3 class="subtitle is-5"><%= concept %></h3>
         </div>
      </section>
