@@ -1,3 +1,4 @@
+<section class="section">
 <div class="columns is-multiline is-mobile">
   <% handmades.forEach(handmade => {%>
     <div id="masonry" class="column is-3-desktop is-4-tablet is-6-mobile">
@@ -8,6 +9,6 @@
     <% }) %>
 </div>
 <% if (locals.isLoggedIn) { %>
-
 <a href="/handmades/new" id="button"class="button is-rounded">Add more hand-mades...</a>
 <% } %>
+</section>

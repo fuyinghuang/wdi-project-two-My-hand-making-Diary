@@ -30,8 +30,6 @@ function newRoute(req, res) {
 
 function createRoute(req,res) {
   console.log('this is the request', req.method, req.body, req.method);
-  // req.body.id = Math.floor(Math.random()*1000);
-  // handMade.handmades.push(req.body);
   Handmade.create(req.body).then(handmade => {
     console.log('Create a handmade', handmade);
     res.redirect('/handmades');

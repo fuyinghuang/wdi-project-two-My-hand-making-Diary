@@ -3,7 +3,6 @@ const Handmade = require('../models/handmade');
 const User = require('../models/user');
 mongoose.connect('mongodb://localhost/handmades');
 
-// Delete existing data first
 Handmade.collection.drop();
 User.collection.drop();
 
@@ -106,7 +105,7 @@ User
           tools: [ 'crochet (10mm)'],
           materials: [ 'crochet (10mm)', 'grey fabric yarn 100g', 'fabric yarn spotted bedge 50g'],
           image: 'https://scontent-lhr3-1.xx.fbcdn.net/v/t31.0-8/12513531_1535786233415018_438026075782027639_o.jpg?_nc_cat=109&_nc_ht=scontent-lhr3-1.xx&oh=4d220f1502521d55c0c9893a1c636826&oe=5C85E250',
-          concept: 'OMG!!!Super Giant',
+          concept: 'OMG!!!Super Giant,OMG!!!Super Giant,OMG!!!Super Giant,OMG!!!Super Giant,OMG!!!Super Giant',
           addedBy: users[0]
         },
         {
