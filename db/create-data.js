@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const env = require('./config/environment');
+const env = require('../config/environment');
 const Handmade = require('../models/handmade');
 const User = require('../models/user');
 mongoose.connect(env.dbUri);
