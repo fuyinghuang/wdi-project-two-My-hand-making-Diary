@@ -10,21 +10,21 @@
    <div class="navbar-item has-dropdown is-hoverable">
     <% if(locals.isLoggedIn) { %>
     <div class="navbar is-light" >
-    <a class="navbar-item"href="/logout" > Logout <%= locals.currentUser.username %> </a>
     <a class="navbar-item" href="/about"> Idea</a>
     <a class="navbar-item" href="/handmades">Hand-mades</a>
     <a class="navbar-item" href="/handmades/tools">Tools</a>
     <a class="navbar-item" href="/handmades/materials">Materials</a>
-    <a class="navbar-item" href="/user/<%= locals.currentUser._id %>">My profile</a>
     <a class="navbar-item" href="/handmades/contact">Contact</a>
+    <a class="navbar-item" href="/user/<%= locals.currentUser._id %>">My profile</a>
+    <a class="navbar-item"href="/logout" > Logout <%= locals.currentUser.username %> </a>
     <hr class="navbar-divider">
     <div class="navbar-item"> Coming soon</div>
     </div>
     <% } else {%>
     <a id="nav" class="navbar-link"></a>
     <div class="navbar-dropdown is-light " >
-    <a class="navbar-item" href="/register"> Sign up</a>
     <a class="navbar-item" href="/login"> Log in</a>
+    <a class="navbar-item" href="/register"> Sign up</a>
     <a class="navbar-item" href="/about"> Idea</a>
     <a class="navbar-item" href="/handmades">Hand-mades</a>
     <a class="navbar-item" href="/handmades/tools"> Tools</a>
