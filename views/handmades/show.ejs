@@ -58,7 +58,7 @@
          <div class="hero-body">
          <% comments.forEach(comment => { %>
           <div class="field">
-            <span><strong><%= comment.user %></strong></span>
+            <span><strong><%= comment.user.username %></strong></span>
           </div>
           <div class="field">
           <span><%= '💜'.repeat(comment.score) %></span>
@@ -88,7 +88,7 @@
        <div class="hero-body">
         <form action='/handmades/<%= id %>/comments' method="post">
           <div class="field">
-            <input  name='user' value='<%= locals.currentUser.username %>' hidden/>
+            <input  name='user' value='<%= locals.currentUser._id %>' hidden/>
           </div>
           <div class="field">
             <label for='score'>Score (1 to 10) </label>

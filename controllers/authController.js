@@ -6,10 +6,7 @@ function registerFormRoute(req, res) {
 }
 
 function registerRoute(req, res) {
-  console.log('A new register', req.body);
-  User.create(req.body).then(result => {
-    console.log('this is register', req.body);
-    console.log('User created', result);
+  User.create(req.body).then(() => {
     res.redirect('/');
   });
 }
@@ -21,14 +18,11 @@ function loginFormRoute(req, res) {
 
 
 function loginRoute(req, res) {
-  console.log('User is logging in', req.body);
   User.findOne({ email: req.body.email }).then(result => {
     if (!result){
       res.redirect('/login');
     }else {
-      console.log('Logging in', result);
       req.session.userId = result._id;
-      console.log('userid is',req.session.userId) ;
       res.redirect('/');
     }
   });

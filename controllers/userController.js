@@ -3,14 +3,14 @@ const User = require('../models/user');
 function userShow(req, res, next) {
   User
     .findById(req.params.id)
-    .populate('addedHandmades')
+    .populate('comments addedHandmades')
     .then(user => {
+      console.log('this is the users comments ', user.comments);
       res.render('profile', user);
     })
     .catch(err => {
       console.log('There was an error', err);
       next();
-
     });
 }
 

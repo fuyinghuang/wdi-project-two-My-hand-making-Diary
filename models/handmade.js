@@ -8,7 +8,7 @@ const handmadeSchema = mongoose.Schema({
   addedBy: { type: mongoose.Schema.ObjectId, ref: 'User' },
   comments: [
     {
-      user: String,
+      user: { type: mongoose.Schema.ObjectId, ref: 'User' },
       comment: String,
       score: Number,
       commentDate: { type: Date, default: Date.now }

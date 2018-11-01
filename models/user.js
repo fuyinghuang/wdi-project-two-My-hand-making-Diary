@@ -6,13 +6,13 @@ const userSchema = mongoose.Schema({
 });
 
 
-// userSchema.virtual('comments', {
-//   ref: 'Handmade',
-//   localField: '_id',
-//   foreignField: 'comments.user'
-// });
-//
-//
+userSchema.virtual('comments', {
+  ref: 'Handmade',
+  localField: '_id',
+  foreignField: 'comments.user'
+});
+
+
 userSchema.virtual('addedHandmades', {
   ref: 'Handmade',
   localField: '_id',
