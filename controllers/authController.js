@@ -1,6 +1,5 @@
 const User = require('../models/user');
 
-
 function registerFormRoute(req, res) {
   res.render('auth/register');
 }
@@ -11,11 +10,9 @@ function registerRoute(req, res) {
   });
 }
 
-
 function loginFormRoute(req, res) {
   res.render('auth/login');
 }
-
 
 function loginRoute(req, res) {
   User.findOne({ email: req.body.email }).then(result => {
@@ -28,10 +25,9 @@ function loginRoute(req, res) {
   });
 }
 
-
 function logoutRoute(req, res) {
   req.session.regenerate(function(){
-    res.render('logout');
+    res.redirect('/');
   });
 }
 

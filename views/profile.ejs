@@ -4,10 +4,10 @@
     <div class="column is-4 is-offset-2">
       <h2 class="title is-2"><%= username %></h2>
        <div class="field">
-        <h3 class="subtitle is-3"><label class="label">I have added ...</label></h3>
+        <h3 class="subtitle is-3"><label id="added"class="label">I have added ...</label></h3>
           <% addedHandmades.forEach(handmade => { %>
             <a href="/handmades/<%= handmade.id %>">
-            <p><strong><%= handmade.name %></strong></p>
+            <p class="create"><strong><%= handmade.name %></strong></p>
             </a>
             <% }) %>
         </div>
@@ -15,10 +15,10 @@
     <div class="column is-4 is-offset-2">
       <h2 class="title is-2"><%= username %></h2>
         <div class="field">
-         <h3 class="subtitle is-3"><label class="label">I have reviewed...</label></h3>
+         <h3  class="subtitle is-3"><label id="reviewed" class="label">I have reviewed...</label></h3>
          <% comments.forEach(comment => { %>
           <a href="/handmades/<%= comment._id %>">
-            <p>
+            <p class="review">
               <%= comment.name %>
             </p>
           </a>
