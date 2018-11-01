@@ -47,21 +47,21 @@ div#masonry:hover img:hover {
 }
 
 .font{
-    font-family: 'Mali', cursive;
+  font-family: 'Caveat', cursive;
 }
 
 #concept{
     font-family: 'Indie Flower', cursive;
 }
 h4{
-  font-family: 'Mali', cursive;
+font-family: 'Caveat', cursive;
 }
-
 h1{
     font-family: 'Mali', cursive;
 }
 h2{
     font-family: 'Charmonman', cursive;
+    text-align: center;
 }
 h3{
   font-family: 'Indie Flower', cursive;
@@ -82,6 +82,9 @@ div#pic img {
   padding: 7px;
   border-radius: 20px;
   /* width: 33.3%; */
+}
+#date{
+  font-size: 10px;
 }
 
 .footer {

@@ -31,7 +31,7 @@ User
         {
           name: 'Sweets in the forest',
           tools: [ 'crochet (4mm)'],
-          materials: ['cotton yarn purple 100g', 'cotton yarn yellow 100g','cotton yarn white 30g','cotton grean 100g','cotton 50g'],
+          materials: ['cotton yarn purple&green 100g', 'cotton yarn yellow 100g','cotton yarn white 30g'],
           image: 'https://scontent-lhr3-1.xx.fbcdn.net/v/t31.0-8/10924177_1522118381448470_356671844929452791_o.jpg?_nc_cat=102&_nc_ht=scontent-lhr3-1.xx&oh=60a3150ec486e5667922748174d9d83e&oe=5C3DBDD9',
           concept: 'I want it forever. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
           addedBy: users[0]

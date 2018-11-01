@@ -2,9 +2,9 @@
   <div class="hero-body">
   <div class="columns">
     <div class="column is-4 is-offset-4">
-      <h3 class="title is-2"><%= username %></h3>
+      <h2 class="title is-2"><%= username %></h2>
       <div class="field">
-        <p><label class="label">Handmades I have added</label></p>
+        <h3 class="subtitle is-3><label class="label">I have added ...</label></h3>
         <div class="control has-icons-left has-icons-right">
           <% addedHandmades.forEach(handmade => { %>
             <a href="/handmades/<%= handmade.id %>">
