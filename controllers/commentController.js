@@ -1,7 +1,5 @@
 const Handmade = require('../models/handmade');
 function createCommentRoute(req, res) {
-  console.log('this is', req.body);
-  console.log('I am....', req.params.id);
   Handmade.findById(req.params.id)
     .then(handmade => {
       console.log('Creating a comment!', handmade, req.body);
@@ -11,9 +9,7 @@ function createCommentRoute(req, res) {
 }
 
 
-
 function deleteCommentRoute(req, res) {
-  console.log('Deleting comment', req.params.commentId);
   Handmade.findById(req.params.id)
     .then(handmade => {
       handmade.comments.id(req.params.commentId).remove();
