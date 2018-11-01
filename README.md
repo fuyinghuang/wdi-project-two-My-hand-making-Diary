@@ -5,24 +5,36 @@
 [GitHub Repo](https://github.com/huangfuin1101/wdi-project-two-My-hand-making-Diary)
 
 
-## Home page
+###
 
-![]()
+
+## Home page
+![](screenshots/home-page.png)
+
+## Log in mode
+![](screenshots/log-in-mode.png)
 
 ## Index page
-![]()
+![](screenshots/index.png)
 
 ## Show page
-![]()
+![](screenshots/show-page.png)
 
-## Reviewer sign on
-![]()
+## Sign up page
+![](screenshots/signup.png)
+
+## Create page
+![](screenshots/add.png)
+
+## Edit and delete
+![](screenshots/edit-delete.png)
 
 ## Review page
-![]()
+![](screenshots/reviews.png)
+
 
 ## Profile page
-![]()
+![](screenshots/profile.png)
 
 
 ## Technologies Used
@@ -39,9 +51,9 @@
 * body-parser: v1.18.3
 * mongoose: v5.3.7
 * method-override: v3.5.0
+* JavaScript (ECMAScript 6)
 * CSS3 with animation
 * Bulma
-* JavaScript (ECMAScript 6)
 * Google Fonts
 * Fontawesome
 
