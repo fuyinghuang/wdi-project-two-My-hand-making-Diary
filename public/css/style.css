@@ -93,8 +93,8 @@ div#pic img {
 }
 
 .footer {
-  margin-top: 35px;
-  padding-bottom: 2.8rem;
+  margin-top: 55px;
+  padding-bottom: 3.2rem;
 }
 i{
   color: black;
@@ -148,4 +148,12 @@ hr {
 }
 .contact{
   margin-right: 150px;
+}
+.hammer{
+  font-size: 35px;
+  color: grey;
+}
+.wrench{
+  font-size: 35px;
+  color: grey;
 }
