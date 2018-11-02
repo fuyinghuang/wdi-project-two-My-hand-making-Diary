@@ -2,7 +2,6 @@ const Handmade = require('../models/handmade');
 function createCommentRoute(req, res) {
   Handmade.findById(req.params.id)
     .then(handmade => {
-      console.log('Creating a comment!', handmade, req.body);
       handmade.comments.push(req.body);
       handmade.save().then(() => res.redirect(`/handmades/${handmade.id}`));
     });
