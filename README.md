@@ -55,6 +55,7 @@ My Hand-making Diary is a hand-made brand I've been managed for years. This app 
 * Bulma
 * Google Fonts
 * Fontawesome
+* Adobe Illustrator
 
 ### Brief
 To build a RESTful personal blog with pinterest style, the app had meet some criteria as below:
