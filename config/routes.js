@@ -7,6 +7,7 @@ const router = require('express').Router();
 
 // register form route
 router.get('/register', authController.registerFormRoute);
+
 // register route(create route)
 router.post('/register', authController.registerRoute);
 
