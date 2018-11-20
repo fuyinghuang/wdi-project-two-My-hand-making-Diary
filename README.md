@@ -1,11 +1,11 @@
-# General Assembly WDI Project 2: My Hand-making Diary
+# General Assembly WDI Project 2: My Hand-Making Diary
 
 [Heroku Pages](https://my-hand-making-diary.herokuapp.com/)
 
 [GitHub Repo](https://github.com/huangfuin1101/wdi-project-two-My-hand-making-Diary)
 
-My Hand-making Diary is my second individual project from General Assembly's Web Development Immersive. This project was built in week and was my first dive into backend technologies.
-My Hand-making Diary is a hand-made brand I've been managed for years. This app is a blog with pinterest style that user can sign up to edit or add more hand-made product and also can give the review for each item. The aim for this app is for hand-made lovers to share, to learn and to communicate.
+My Hand-Making Diary is my second individual project from General Assembly's Web Development Immersive. This project was built in week and was my first dive into backend technologies.
+My Hand-Making Diary is a hand-made brand I've been managed for years. This app is a blog with pinterest style that user can sign up to edit or add more hand-made product and also can give the review for each item. The aim for this app is for hand-made lovers to share, to learn and to communicate.
 
 ## Home page
 ![](screenshots/home-page.png)
