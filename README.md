@@ -8,7 +8,7 @@ My Hand-Making Diary is my second individual project from General Assembly's Web
 My Hand-Making Diary is a hand-made brand I've been managed for years. This app is a blog with pinterest style that user can sign up to edit or add more hand-made product and also can give the review for each item. The aim for this app is for hand-made lovers to share, to learn and to communicate.
 
 ## Home page
-![](screenshots/home-page.png)
+![](screenshots/home.png)
 
 ## Log in mode
 ![](screenshots/log-in-mode.png)
