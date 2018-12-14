@@ -7,33 +7,33 @@
 My Hand-Making Diary is my second individual project from General Assembly's Web Development Immersive. This project was built in week and was my first dive into backend technologies.
 My Hand-Making Diary is a hand-made brand I've been managed for years. This app is a blog with pinterest style that user can sign up to edit or add more hand-made product and also can give the review for each item. The aim for this app is for hand-made lovers to share, to learn and to communicate.
 
-## Home page
-![](screenshots/home.png)
+## Home Page
+![Home Page](screenshots/home.png)
 
-## Log in mode
-![](screenshots/log-in-mode.png)
+## Login Mode
+![Login Mode](screenshots/log-in-mode.png)
 
-## Index page
-![](screenshots/index.png)
+## Index Page
+![Index Page](screenshots/index.png)
 
-## Show page
-![](screenshots/show-page.png)
+## Show Page
+![Show Page](screenshots/show-page.png)
 
-## Sign up page
-![](screenshots/signup.png)
+## Sign Up Page
+![Sign Up Page](screenshots/signup.png)
 
-## Create page
-![](screenshots/add.png)
+## Create Page
+![Create Page](screenshots/add.png)
 
 ## Edit and delete
-![](screenshots/edit-delete.png)
+![Edit and delete](screenshots/edit-delete.png)
 
-## Review page
+## Review Page
 ![](screenshots/reviews.png)
 
 
 ## Profile page
-![](screenshots/profile.png)
+![Profile page](screenshots/profile.png)
 
 
 ## Technologies Used
