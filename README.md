@@ -67,14 +67,13 @@ Has a User model and user authentication
 
 
 ### Featured Piece of Code
-This function lets user can view that what items been added and reviewed by the user and the it would appear on the Profile page once the user log in. From controllers/userController.js
+This function lets user can view that what items been added and reviewed by the user and the it would appear on the Profile page once the user log in. From [.controllers/userController.js](https://github.com/huangfuin1101/wdi-project-two-My-hand-making-Diary/blob/master/controllers/userController.js)
 ```
 function userShow(req, res, next) {
   User
     .findById(req.params.id)
     .populate('comments addedHandmades')
     .then(user => {
-      console.log('this is the users comments ', user.comments);
       res.render('profile', user);
     })
     .catch(err => {
@@ -86,6 +85,11 @@ function userShow(req, res, next) {
 
 ### Styling
 This app follows black and white style of the brand image with a clean looking that matches minimalism. I used Bulma, google font and Font Awesome plus CSS as styling tools for this app.
+
+### Wins and Blockers
+The biggest wine I would say was the inspiration and images of the App. I took the pictures of the handmade products which I made it by my own and used to sell it in the market.
+
+Another big win also a challenge was that user create/delete a review. At the beginning I couldn't get the reviews and the username been populated even though the reviews was actually been created.
 
 ### Future Features
 There are some features I would like to add in the future:
