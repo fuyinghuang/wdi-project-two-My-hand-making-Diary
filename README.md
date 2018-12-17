@@ -5,7 +5,7 @@
 [GitHub Repo](https://github.com/huangfuin1101/wdi-project-two-My-hand-making-Diary)
 
 My Hand-Making Diary is my second individual project from General Assembly's Web Development Immersive. This project was built in week and was my first dive into backend technologies.
-My Hand-Making Diary is a hand-made brand I've been managed for years. This app is a blog with pinterest style that user can sign up to edit or add more hand-made product and also can give the review for each item. The aim for this app is for hand-made lovers to share, to learn and to communicate.
+My Hand-Making Diary is a hand-made brand I've been managed for years. This app is a blog with Pinterest style that user can sign up to edit or add more hand-made product and also can give the review for each item. The aim for this app is for hand-made lovers to share, to learn and to communicate.
 
 ## Home Page
 ![Home Page](screenshots/home.png)
@@ -58,7 +58,7 @@ My Hand-Making Diary is a hand-made brand I've been managed for years. This app 
 * Adobe Illustrator
 
 ### Brief
-To build a RESTful personal blog with pinterest style, the app had meet some criteria as below:
+To build a RESTful personal blog with Pinterest style, the app had meet some criteria as below:
 
 * Has models for handmade product and user reviews.
 * A user model and user authentication.
@@ -89,7 +89,7 @@ This app follows black and white style of the brand image with a clean looking t
 ### Wins and Blockers
 The biggest wine I would say was the inspiration and images of the App. I took the pictures of the handmade products which I made it by my own and used to sell it in the market.
 
-Another big win also a challenge was that user create/delete a review. At the beginning I couldn't get the reviews and the username been populated even though the reviews was actually been created.
+Another big win also a challenge was that the user created/deleted a review. At the beginning, I couldn't get the reviews and the username been populated even though the reviews were actually been created.
 
 ### Future Features
 There are some features I would like to add in the future:
